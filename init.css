@@ -1,12 +1,13 @@
 body {
   margin: 0;
   font-family: Calibri;
+  background-color: #2C5687
 }
 
 .header {
   overflow: hidden;
-  background: #f1f1f1;
-  color: #000000;
+  background: #6A6C95;
+  color: #6A6C95;
 }
 
 .header a {
@@ -15,7 +16,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .header a:hover {
@@ -81,4 +82,3 @@ th, td {
   padding: 5px;
   text-align: left;
 }
-
