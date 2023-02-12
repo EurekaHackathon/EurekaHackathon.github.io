@@ -19,7 +19,6 @@ body{
 .banner-full{
   display:flex;
   flex-direction:column;
-  height: 400px;
   width: 100%;
   background-image: url("./assets/EurekaWebBack.png");
   background-repeat: no-repeat, no-repeat;
