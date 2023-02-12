@@ -10,16 +10,18 @@ body{
   height: 50%;
 }
 .banner-words{
+  width:fit-content;
   display:flex;
   flex-direction:column;
 }
 .banner-top{
-  display: inline-block;
+  width:fit-content;
+  display: flex;
 }
 .banner-full{
+  width:fit-content;
   display:flex;
   flex-direction:column;
-  width: 100%;
   background-image: url("./assets/EurekaWebBack.png");
   background-repeat: no-repeat, no-repeat;
 }
