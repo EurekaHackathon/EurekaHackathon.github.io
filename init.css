@@ -1,8 +1,19 @@
+.banner-words{
+  display: flex;
+  flex-direction:column;
+}
+.banner-top{
+  display: flex;
+}
+.banner-full{
+  display: flex;
+}
+
 #banner{
   /* */
   height: 400px;
   width: 100%;
-  background-image: url("./Assets/EurekaWebBack.png");
+  background-image: url("./assets/EurekaWebBack.png");
   background-repeat: no-repeat, no-repeat;
 }
 
