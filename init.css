@@ -1,84 +1,12 @@
-body {
-  margin: 0;
-  font-family: Calibri;
-  background-color: #2C5687
-}
-
-.header {
-  overflow: hidden;
-  background: #6A6C95;
-  color: #6A6C95;
-}
-
-.header a {
-  float: left;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 30px;
-}
-
-.header a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.header a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-.contentmain {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
+#banner{
+  /* */
+  height: 400px;
   width: 100%;
+  background-image: url("./Assets/EurekaWebBack.png");
+  background-repeat: no-repeat, no-repeat;
 }
 
-.sticky + .content {
-  padding-top: 102px;
-}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 5px;
-  text-align: left;
+.section{
+  /*insert standard text size and font for each section*/
+  font-size: 10px;
 }
