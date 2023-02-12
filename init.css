@@ -14,7 +14,7 @@ body{
   flex-direction:column;
 }
 .banner-top{
-  display:flex;
+  display: inline-block;
 }
 .banner-full{
   display:flex;
