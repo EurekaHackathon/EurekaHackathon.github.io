@@ -1,16 +1,22 @@
 body{
   background-color:#17162c;
+  font-size:20px;
 }
-
+.container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
 .banner-words{
-  display: flex;
+  display:flex;
   flex-direction:column;
 }
 .banner-top{
-  display: flex;
+  display:flex;
 }
 .banner-full{
-  display: flex;
+  display:flex;
+  flex-direction:column;
   height: 400px;
   width: 100%;
   background-image: url("./assets/EurekaWebBack.png");
