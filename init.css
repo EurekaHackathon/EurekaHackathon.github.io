@@ -1,3 +1,7 @@
+body{
+  background-color:#17162c;
+}
+
 .banner-words{
   display: flex;
   flex-direction:column;
@@ -7,14 +11,14 @@
 }
 .banner-full{
   display: flex;
-}
-
-#banner{
-  /* */
   height: 400px;
   width: 100%;
   background-image: url("./assets/EurekaWebBack.png");
   background-repeat: no-repeat, no-repeat;
+}
+
+.header{
+  background-color: #FFF;
 }
 
 .section{
