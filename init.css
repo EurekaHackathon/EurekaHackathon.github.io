@@ -7,16 +7,13 @@ body{
 .header{
   display:flex;
   align-items:center;
-  opacity:0;
+  background: transparent;
   position:absolute;
   left:0px;
   top:0px;
   width:100%;
 }
 
-.header > * {
-  opacity:1;
-}
 .header-text{
   color:white;
   font-size: 10px;
@@ -66,4 +63,11 @@ body{
 .section{
   /*insert standard text size and font for each section*/
   font-size: 10px;
+}
+
+.section > p {
+
+}
+.abbey-link{
+  display: inline-block;
 }
