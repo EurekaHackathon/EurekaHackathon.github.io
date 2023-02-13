@@ -27,11 +27,10 @@ a {
 }
 
 .container{
-  display:inline-flex;
+  padding: 30% 0%;
+  display:inline;
   flex-direction:column;
   align-items: center;
-  height:100%;
-  width:100%;
   justify-content: center;
   background-image: url("/assets/WebsiteMainPhoto.png");
   background-position: center;
@@ -61,8 +60,7 @@ a {
 }
 .banner-full{
   width:fit-content;
-  display:flex;
-  flex-direction:column;
+  height: 40%;
 }
 
 .section{
