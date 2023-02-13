@@ -3,6 +3,16 @@ body{
   font-size:20px;
   margin:0px;
 }
+
+.header{
+  display:flex;
+  align-items:center;
+  background-color: transparent;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:100%;
+}
 .container{
   display:flex;
   flex-direction:column;
