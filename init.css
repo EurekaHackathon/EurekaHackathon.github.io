@@ -56,13 +56,10 @@ body{
   flex-direction:column;
 }
 
-.header{
-  background-color: #FFF;
-}
-
 .section{
   /*insert standard text size and font for each section*/
   font-size: 10px;
+  color:white;
 }
 
 .section > p {
