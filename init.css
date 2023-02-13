@@ -14,7 +14,7 @@ a {
   background: transparent;
   justify-content: center;
   position:absolute;
-  padding:5px 5px;
+  padding:10px 0px;
   left:0px;
   top:0px;
   width:100%;
@@ -22,6 +22,7 @@ a {
 }
 
 .header-text{
+  line-height:50px;
   font-size: 20px;
 }
 
@@ -74,4 +75,8 @@ a {
 }
 .abbey-link{
   display: inline-block;
+}
+
+.abbey-link a:visited {
+  color:white;
 }
