@@ -27,8 +27,8 @@ a {
 }
 
 .container{
-  padding: 30% 0%;
-  display:inline;
+  padding: 20% auto;
+  display:flex;
   flex-direction:column;
   align-items: center;
   justify-content: center;
@@ -60,7 +60,7 @@ a {
 }
 .banner-full{
   width:fit-content;
-  height: 40%;
+  height: 60%;
 }
 
 .section{
@@ -70,9 +70,6 @@ a {
   color:white;
 }
 
-.section > p {
-
-}
 .abbey-link{
   display: inline-block;
 }
