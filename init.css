@@ -12,11 +12,12 @@ body{
   left:0px;
   top:0px;
   width:100%;
+  gap:10px
 }
 
 .header-text{
   color:white;
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .container{
@@ -38,12 +39,12 @@ body{
 }
 
 .banner-words > h1{
-  font-size:large;
+  font-size:50px;
   color:white;
 }
 
 .banner-words > h2{
-  font-size:small;
+  font-size:20px;
   color:white;
 }
 .banner-top{
