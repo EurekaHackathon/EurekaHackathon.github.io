@@ -4,6 +4,11 @@ body{
   margin:0px;
 }
 
+a {
+  text-decoration: none; 
+}
+
+
 .header{
   display:flex;
   background: transparent;
