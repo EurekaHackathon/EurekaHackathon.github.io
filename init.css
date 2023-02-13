@@ -13,6 +13,12 @@ body{
   top:0px;
   width:100%;
 }
+
+.header-text{
+  color:white;
+  font-size: 10px;
+}
+
 .container{
   padding: 200px 0px;
   display:flex;
