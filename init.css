@@ -6,9 +6,10 @@ body{
 
 .header{
   display:flex;
-  align-items:center;
   background: transparent;
+  justify-content: center;
   position:absolute;
+  padding:5px 5px;
   left:0px;
   top:0px;
   width:100%;
@@ -58,6 +59,7 @@ body{
 
 .section{
   /*insert standard text size and font for each section*/
+  margin:auto;
   font-size: 10px;
   color:white;
 }
