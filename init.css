@@ -14,6 +14,9 @@ body{
   width:100%;
 }
 
+.header > * {
+  opacity:1;
+}
 .header-text{
   color:white;
   font-size: 10px;
@@ -37,12 +40,12 @@ body{
   color:
 }
 
-.banner-words h1{
+.banner-words > h1{
   font-size:large;
   color:white;
 }
 
-.banner-words h2{
+.banner-words > h2{
   font-size:small;
   color:white;
 }
