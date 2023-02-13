@@ -23,7 +23,7 @@ body{
   width:fit-content;
   display:flex;
   flex-direction:column;
-  background-image: url("./assets/EurekaWebBack.png");
+  background-image: url("/assets/WebsiteMainPhoto.png");
   background-repeat: no-repeat, no-repeat;
 }
 
