@@ -1,81 +1,207 @@
+:root {
+  --main-bg-color: #191820;
+}
+
 body, html{
-  background-color:#191820;
+  background-color:var(--main-bg-color);
   font-size:20px;
   margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-a {
+.header-image {
+  width: 2.5em;
+  height: 2.5em;
+  margin-top:5px;
+}
+.header > a, a:hover, a:active, a:visited {
   text-decoration: none; 
+  color:white;
+  font-size: 1em;
+  
 }
-
+.header > a:hover{
+  text-decoration-line:underline;
+}
 
 .header{
   display:flex;
   background: transparent;
   justify-content: center;
-  position:absolute;
-  padding:10px 0px;
+  align-items:center;
+  position:fixed;
   left:0px;
   top:0px;
   width:100%;
-  gap:10px
+  gap:20px;
 }
 
-.header-text{
-  line-height:50px;
-  font-size: 20px;
-}
 
 .fullscreen-container{
   position:static;
-  height:100vh;
-  width:100vw;
+  
+  font-size: calc(0.75vw + 10px);
+  padding:0 5px;
+  min-height: 100vh;
+  width:100%-10px;
   display:flex;
   flex-direction:column;
   align-items: center;
   justify-content: center;
   background-image: url("/assets/WebsiteMainPhoto.png");
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .banner-words{
   width:fit-content;
   display:flex;
   flex-direction:column;
-  color:
+  justify-content: center;
 }
 
 .banner-words > h1{
-  font-size:100px;
+  font-size:5em;
+  line-height: 1em;
   color:white;
-  margin:10px 0px;
+  margin:0em;
+  text-align:right;
 }
 
 .banner-words > h2{
-  font-size:30px;
+  font-size:1em;
+  line-height: 1em;
   color:white;
+  margin:0em;
 }
 .banner-top{
   width:fit-content;
   display: flex;
+  flex-wrap:wrap;
 }
-.banner-full{
-  width:fit-content;
-  height: 60%;
-}
-
-.section{
-  /*insert standard text size and font for each section*/
-  margin:auto;
-  font-size: 16px;
-  color:white;
+.biglogo{
+  width:10em;
+  height:10em;
 }
 
-.abbey-link{
+.register{
+  line-height:1em;
+  background-color: #d18d35; 
+  border: none;
+  color: white;
+  margin-top: .5em;
+  padding: 1em 3em;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
+  font-size: 1em;
+  border-radius: 15px;
+}
+.register:hover{
+  line-height:1em;
+  background-color: #ca9b5d; 
+  border: none;
+  color: white;
+  margin-top: .5em;
+  padding: 1em 3em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  border-radius: 15px;
 }
 
-.abbey-link a:visited {
+section{
+  /*insert standard text size and font for each section*/
+  margin:20vh 15vw;
+  font-size: calc(1.15vw + 10px);
   color:white;
+}
+
+.about{
+  border-style:solid;
+  background-color: #403e49;
+  border-color:yellow;
+  border-radius: 10px;
+  padding:1em;
+}
+.about-title{
+  font-size: 2em;
+  color:yellow;
+}
+.abbey-link, .abbey-link:visited{
+  color:inherit;
+  line-height:inherit;
+  display: inline;
+  text-decoration: none;
+  font-size:inherit;
+}
+.abbey-link:hover, .abbey-link:active{
+  color:skyblue;
+  line-height:inherit;
+  display: inline;
+  text-decoration: none;
+  font-size:inherit;
+}
+/* FAQ */
+
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.question-grid {
+  display:grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(5rem, auto);
+  list-style-type: none;
+  overflow:auto;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.question-box {
+  width:100%;
+  display: list-item;
+  font-size: .75em;
+  border-radius:10px;
+  border: 2px solid gray;
+  transition: .5s;
+  min-height: 0;
+}
+.question {
+  margin: 1.5rem;
+  pointer-events:none;
+}
+.answer {
+  margin: 0 1rem .5rem 1rem;
+  pointer-events: none;
+}
+.hidden {
+  display:none;
+}
+.links{
+  display:flex;
+  position: block;
+  height:2.5rem;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+
+/* SCHEDULE FORMATTING */
+iframe {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  border-width:0px;
 }

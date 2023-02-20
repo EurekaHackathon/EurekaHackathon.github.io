@@ -2,41 +2,122 @@
 <html>
   <head>
   <link rel="stylesheet" href="init.css">
-  <script src="init.js"></script>
   <title> Eureka! 2023 </title>
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
   </head>
 <body>
-
-  <div class="header">
-    <img src="/assets/EurekaLogoFinal.png" width="50px" height="50px">
-    <a href="https://discord.gg/xUznWcfVGr">discord link</a>
-    <a class="header-text" href="#schedule">SCHEDULE</a>
-    <a class="header-text" href="#faq">FAQ</a>
-    <a class="header-text" href="#sponsors">SPONSORS</a>
+  <div class="header" id="header">
+    <a href="#main"><img class="header-image" src="/assets/EurekaLogoFinal.png"></a>
+    <a href="./schedule.html">SCHEDULE</a>
+    <a href="#faq">FAQ</a>
+    <a href="#sponsors">SPONSORS</a>
   </div>
 
-  <div class="fullscreen-container">
-    <div class="banner-full">
-      <div class="banner-top">
-        <div class="banner-words">
-          <h2>May 1ww3th</h2>
-          <h1>EUREKA!</h1>
-          <h1>2023</h1>
-        </div>
-        <img src="/assets/EurekaLogoFinal.png" width="300px" height="300px">
+  <div id="main" class="fullscreen-container">
+    <div class="banner-top">
+      <div class="banner-words">
+        <h2>May 13th</h2>
+        <h1>EUREKA!</h1>
+        <h1>2023</h1>
       </div>
+      <img class="biglogo" src="/assets/EurekaLogoFinal.png">
     </div>
-    <button type="button">Register!</button>
+    <a class="register" target=”_blank” href="https://forms.gle/YH7cy4UTepMwE6Qx5">Register!</a>
   </div>
-  
-  <div class="section" id="about">
+
+  <section class="about">
+    <div class="about-title">
+      <a class="abbey-link" href="https://aph.hdsb.ca/" target="_blank">ABBEY PARK</a>
+      <span>'S 2023 HACKATHON</span>
+    </div>
     <span>Welcome to Eureka! where the next generation of tech innovators come together to collaborate, create, and showcase their skills. Come to </span>
     <a class="abbey-link" href="https://aph.hdsb.ca/" target="_blank">Abbey Park High School</a>
     <span> to innovate, solve real world problems, and meet new likeminded people. Each team will create a solution or project related to our theme, and get the chance to win prizes. This event is dedicated to empowering and inspiring high school students to pursue their passion in technology and design. With workshops, coding challenges, and networking opportunities, participants will have the chance to unleash their full potential and bring their ideas to life. So gear up, get ready to code, and let's build the future together!</span>
+  </section>
+
+  <section class="faq" id="faq">
+    <h1>Frequently Asked Questions</h1>
+    <ul class="question-grid">
+      <div class="grid-cell">
+        <button type="button" class="question-box" id="faq1">
+          <p class="question">What is a hackathon?</p>
+          <div class="answer hidden">
+            lorem ipsumlorem ipsumloremipesumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+          </div>
+        </button>
+      </div>
+      <div class="grid-cell">
+        <button type="button" class="question-box" id="faq2">
+          <p class="question">What is a hackathon?</p>
+          <div class="answer hidden">
+            lorem ipsum
+          </div>
+        </button>
+      </div>
+      <div class="grid-cell">
+        <button type="button" class="question-box" id="faq3">
+          <p class="question">What is a hackathon?</p>
+          <div class="answer hidden">
+            lorem ipsum
+          </div>
+        </button>
+      </div>
+      <div class="grid-cell">
+        <button type="button" class="question-box" id="faq4">
+          <p class="question">What is a hackathon?</p>
+          <div class="answer hidden">
+            lorem ipsum
+          </div>
+        </button>
+      </div>
+      <div class="grid-cell">
+        <button type="button" class="question-box" id="faq5">
+          <p class="question">What is a hackathon?</p>
+          <div class="answer hidden">
+            lorem ipsum
+          </div>
+        </button>
+      </div>
+      <div class="grid-cell">
+        <button type="button" class="question-box" id="faq6">
+          <p class="question">What is a hackathon?</p>
+          <div class="answer hidden">
+            lorem ipsum
+          </div>
+        </button>
+      </div>
+    </ul>
+    <h2>More Questions? Reach out to us at</h2>
+    <a>@eurekahack2023@gmail.com</a>
+  </section>
+
+  <section class="sponsors" id="sponsors">
+    Sponsors: IN PROGRESS
+  </section>
+
+  <section class="team">
+    <h1>Meet the Team</h1>
+    <div class="exec-box">
+      <p>David Lim</p>
+      <img class="exec-img" src="/team/DavidLim.png" alt="David Lim Image">
+    </div>
+  </section>
+</div>
+
+<footer class="links">
+  <div class="link-sector">
+    <img class="link-icon instagram">
+    <a class="social-link instagram">Instagram</a>
   </div>
+  <div class="link-sector">
+    <img class="link-icon discord">
+    <a class="social-link">Discord</a>
+  </div>
+  <div class="link-sector">
+    <img class="link-icon devpost">
+    <a class="social-link">Devpost</a>
+  </div>
+</footer>
 
-  <div class="section" id="questions"></div>
-
-</body>
+<script src="init.js"></script>
 </html>
