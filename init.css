@@ -1,5 +1,5 @@
 body{
-  background-color:#17162c;
+  background-color:#191820;
   font-size:20px;
   margin: 0;
 }
@@ -26,7 +26,10 @@ a {
   font-size: 20px;
 }
 
-.container{
+.fullscreen-container{
+  position:static;
+  height:100vh;
+  width:100vw;
   padding: 20% auto;
   display:flex;
   flex-direction:column;
