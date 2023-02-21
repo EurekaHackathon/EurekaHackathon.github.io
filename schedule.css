@@ -6,6 +6,9 @@
     width: 2.5em;
     height: 2.5em;
     margin-top:5px;
+    position: absolute;
+    top: 1%;
+    left: 1%;
   }
 .header > a, a:hover, a:active, a:visited {
     text-decoration: none; 
