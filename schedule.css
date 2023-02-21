@@ -1,3 +1,7 @@
+:root {
+    --main-bg-color: #191820;
+}
+
 .header-image {
     width: 2.5em;
     height: 2.5em;
@@ -23,10 +27,6 @@
     top:0px;
     width:100%;
     gap:20px;
-}
-
-:root {
-  --main-bg-color: #191820;
 }
 
 body, html{
