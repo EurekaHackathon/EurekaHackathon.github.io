@@ -65,7 +65,6 @@ document.querySelectorAll(".question-box").forEach((el) => {
 const underline = document.querySelector(".underline");
 const links = document.querySelectorAll(".header-middle > a");
 const ul = document.querySelector(".header-middle");
-// const colors = ["deepskyblue", "orange", "firebrick", "gold", "magenta", "black", "darkblue"];
 
 
 for (let i = 0; i < links.length; i++) {
