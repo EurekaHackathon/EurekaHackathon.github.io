@@ -39,6 +39,39 @@ body, html{
   color:white;
 }
 
+.back{
+    line-height:1em;
+    background-color: #d18d35; 
+    border: none;
+    color: white;
+    margin-top: .5em;
+    padding: 1em 3em;
+    position:absolute;
+    top: 3%;
+    right: 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 15px;
+  }
+  .back:hover{
+    line-height:1em;
+    background-color: #ca9b5d; 
+    border: none;
+    color: white;
+    margin-top: .5em;
+    padding: 1em 3em;
+    position:absolute;
+    top: 3%;
+    right: 3%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 15px;
+  }
+
 @media screen and (min-width:700px) {
 	.schedule {
 		display: grid;
