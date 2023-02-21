@@ -1,5 +1,4 @@
 var r = document.querySelector(':root');
-const header = document.getElementById("header");
 
 //parallax scroll effect
 const parallax = document.getElementById("main");
@@ -12,6 +11,7 @@ window.addEventListener("scroll", function () {
 
 
 //change color of header when scrolled far enough
+const header = document.getElementById("header");
 var height;
 var scrollTop;
 
@@ -31,6 +31,18 @@ window.addEventListener('load', changeHeader);
 window.addEventListener("resize", changeHeader);
 window.addEventListener("scroll", changeHeader);
 
+//disappear header when scroll down
+
+let lastScrollY = window.scrollY;
+window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+        header.classList.add("header-hidden");
+    } else {
+        header.classList.remove("header-hidden");
+    }
+    lastScrollY = window.scrollY;
+})
+
 //buttons
 
 const openText = (e) => {
@@ -49,3 +61,40 @@ document.querySelectorAll(".question-box").forEach((el) => {
     el.addEventListener('click', openText)
 })
 
+//header animation
+const underline = document.querySelector(".underline");
+const links = document.querySelectorAll(".header-middle > a");
+const ul = document.querySelector(".header-middle");
+// const colors = ["deepskyblue", "orange", "firebrick", "gold", "magenta", "black", "darkblue"];
+
+
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("mouseenter", mouseenterFunc);
+}
+
+function mouseenterFunc() {
+    for (let i = 0; i < links.length; i++) {
+      links[i].style.opacity = "0.25";
+    }
+    
+    this.style.opacity = "1";
+    
+    const width = this.getBoundingClientRect().width;
+    const height = this.getBoundingClientRect().height;
+    const left = this.getBoundingClientRect().left;
+    const top = this.getBoundingClientRect().top;
+    underline.style.width = `${width}px`;
+    underline.style.height = `${height}px`;
+    underline.style.left = `${left}px`;
+    underline.style.top = `${top}px`;
+    underline.style.transform = "none";
+  }
+
+function noActive() {
+    underline.style.width = '0px';
+    for (let i = 0; i < links.length; i++) {
+        links[i].style.opacity = "1";
+    }
+}
+window.addEventListener("resize", noActive);
+ul.addEventListener("mouseleave", noActive);

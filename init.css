@@ -1,5 +1,6 @@
 :root {
   --main-bg-color: #191820;
+  --nav-height: 3.25rem;
 }
 
 body, html{
@@ -15,28 +16,54 @@ body, html{
   height: 2.5em;
   margin-top:5px;
 }
-.header > a, a:hover, a:active, a:visited {
+.header-middle{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.header-middle > a {
+  display:block;
+  transition: all .35s ease-in-out;
   text-decoration: none; 
   color:white;
   font-size: 1em;
-  
 }
-.header > a:hover{
-  text-decoration-line:underline;
+
+.underline{
+  transition: all .35s ease-in-out;
+  position: absolute;
+  border-bottom: 4px solid transparent;
+  border-color: white;
+  z-index: -1;
+  transform: translateX(-60px);
 }
+
+.header > a{
+  margin: .5em;
+}
+
 
 .header{
   display:flex;
   background: transparent;
-  justify-content: center;
+  justify-content: space-between;
   align-items:center;
   position:fixed;
   left:0px;
   top:0px;
   width:100%;
+  height: var(--nav-height);
   gap:20px;
+  transition: transform 0.15s;
 }
 
+.header-hidden{
+  transform:translateY(calc(-1 * var(--nav-height)));
+  transition: transform 0.15s;
+}
 
 .fullscreen-container{
   position:static;
@@ -145,14 +172,6 @@ section{
   font-size:inherit;
 }
 /* FAQ */
-
-ul {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
 
 .question-grid {
   display:grid;
