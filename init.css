@@ -1,5 +1,6 @@
 :root {
   --main-bg-color: #191820;
+  --alt-bg-color: #34659B;
   --nav-height: 3.25rem;
 }
 
@@ -68,7 +69,7 @@ body, html{
 .fullscreen-container{
   position:static;
   
-  font-size: calc(0.75vw + 10px);
+  font-size: calc(1vw + 15px);
   padding:0 5px;
   min-height: 100vh;
   width:100%-10px;
@@ -141,18 +142,11 @@ body, html{
 
 section{
   /*insert standard text size and font for each section*/
-  margin:20vh 15vw;
-  font-size: calc(1.15vw + 10px);
+  padding:20vh 15vw;
+  font-size: calc(1.5vw);
   color:white;
 }
 
-.about{
-  border-style:solid;
-  background-color: #403e49;
-  border-color:yellow;
-  border-radius: 10px;
-  padding:1em;
-}
 .about-title{
   font-size: 2em;
   color:yellow;
@@ -172,11 +166,13 @@ section{
   font-size:inherit;
 }
 /* FAQ */
-
+.faq {
+  background-color:var(--alt-bg-color);
+}
 .question-grid {
   display:grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-template-columns: repeat(3, minmax(11rem, 1fr));
   grid-auto-rows: minmax(5rem, auto);
   list-style-type: none;
   overflow:auto;
@@ -186,7 +182,7 @@ section{
 .question-box {
   width:100%;
   display: list-item;
-  font-size: .75rem;
+  font-size: calc(30px - .5vw);
   border-radius:10px;
   border: 2px solid gray;
   overflow: hidden;
@@ -198,30 +194,42 @@ section{
 .answer {
   margin: 0 1rem .5rem 1rem;
   pointer-events: none;
-  transition: margin 0.2s, max-height .7s;
-  max-height: 120px;
+  transition: margin 0.2s, height .7s;
+  height: auto;
 }
 .hidden {
   margin: 0 1rem 0rem 1rem;
-  max-height: 0;
+  height: 0;
+}
+.faqemail {
+  font-size: 1em;
 }
 .links{
-  display:flex;
   position: block;
-  height:2.5rem;
+  height:4rem;
   left:0;
   bottom: 0;
   width: 100%;
-  background-color: red;
-  color: white;
+  background-color: gray;
+  color: black;
   text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  gap:20px;
 }
 
-
-/* SCHEDULE FORMATTING */
-iframe {
-  position:absolute;
-  width: 100%;
-  height: 100%;
-  border-width:0px;
+@media screen and (max-width: 1000px){
+  :root {
+    --nav-height: 6rem;
+  }
+  section{
+    padding:10vh 5vw;
+  }
+  .header{
+    font-size:35px;
+  }
+  .question-grid {
+    grid-template-columns: repeat(2, minmax(11rem, 1fr));
+  }
 }
