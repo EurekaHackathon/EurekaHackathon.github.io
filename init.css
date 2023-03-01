@@ -1,6 +1,7 @@
 :root {
   --main-bg-color: #191820;
   --alt-bg-color: #34659B;
+  --light-main-color: #272532;
   --nav-height: 3.25rem;
 }
 
@@ -42,11 +43,6 @@ body, html{
   transform: translateX(-60px);
 }
 
-.header > a{
-  margin: .5em;
-}
-
-
 .header{
   display:flex;
   background: transparent;
@@ -55,10 +51,11 @@ body, html{
   position:fixed;
   left:0px;
   top:0px;
-  width:100%;
+  width:calc(100% - 2vw);
   height: var(--nav-height);
-  gap:20px;
   transition: transform 0.15s;
+  z-index: 1;
+  padding: 0 1vw 0 1vw;
 }
 
 .header-hidden{
@@ -67,9 +64,9 @@ body, html{
 }
 
 .fullscreen-container{
-  position:static;
+  position:relative;
   
-  font-size: calc(1vw + 15px);
+  font-size: 1.7vw;
   padding:0 5px;
   min-height: 100vh;
   width:100%-10px;
@@ -118,7 +115,7 @@ body, html{
   background-color: #d18d35; 
   border: none;
   color: white;
-  margin-top: .5em;
+  margin: .5em .5em 0 .5em;
   padding: 1em 3em;
   text-align: center;
   text-decoration: none;
@@ -127,29 +124,29 @@ body, html{
   border-radius: 15px;
 }
 .register:hover{
-  line-height:1em;
   background-color: #ca9b5d; 
-  border: none;
-  color: white;
-  margin-top: .5em;
-  padding: 1em 3em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1em;
-  border-radius: 15px;
+}
+.smallerbutton{
+  font-size:calc(var(--nav-height) * 0.2);
 }
 
+.mountains{
+  width:100%;
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  pointer-events: none
+}
 section{
   /*insert standard text size and font for each section*/
   padding:20vh 15vw;
-  font-size: calc(1.5vw);
+  font-size: 1.5vw;
   color:white;
 }
 
 .about-title{
   font-size: 2em;
-  color:yellow;
+  color:white;
 }
 .abbey-link, .abbey-link:visited{
   color:inherit;
@@ -168,6 +165,7 @@ section{
 /* FAQ */
 .faq {
   background-color:var(--alt-bg-color);
+  padding:20vh 5vw;
 }
 .question-grid {
   display:grid;
@@ -186,6 +184,7 @@ section{
   border-radius:10px;
   border: 2px solid gray;
   overflow: hidden;
+  background-color: var(--light-main-color);
 }
 .question {
   margin: 1.5rem 1rem;
@@ -218,8 +217,21 @@ section{
   align-items:center;
   gap:20px;
 }
+/* SPONSORS */
+.sponsorbox{
+  background-color:white;
+  color:black;
+  padding:1em;
+  padding-bottom: 2em;
+  border-radius: 10px;
+}
 
-@media screen and (max-width: 1000px){
+
+/* team */
+.exec-img{
+  width: 10em;
+}
+@media screen and (max-width: 992px){
   :root {
     --nav-height: 6rem;
   }
@@ -231,5 +243,11 @@ section{
   }
   .question-grid {
     grid-template-columns: repeat(2, minmax(11rem, 1fr));
+  }
+  .fullscreen-container{
+    font-size: 4vw;
+  }
+  .biglogo {
+    display:none;
   }
 }
