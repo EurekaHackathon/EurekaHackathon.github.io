@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
 :root {
   --main-bg-color: #191820;
   --alt-bg-color: #34659B;
@@ -6,6 +7,7 @@
 }
 
 body, html{
+  font-family: 'Source Code Pro', monospace;
   background-color:var(--main-bg-color);
   font-size:20px;
   margin: 0;
