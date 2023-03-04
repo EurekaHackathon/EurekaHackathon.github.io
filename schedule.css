@@ -232,8 +232,11 @@ hr {
       padding:5vh 3vw;
     }
     .back{
-      font-size:0.6em;
+      font-size:1em;
       padding: 0.8em 1.5em;
+      position:relative;
+      top: 0.3em;
+      right: 0.3em;
     }
     .header-image {
         display: none;
@@ -244,6 +247,7 @@ hr {
     .schedule {
         padding: 0em 0.8em;
     }
+    
 }
 @media screen and (max-width: 900px) {
     .header-image {
