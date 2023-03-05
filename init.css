@@ -18,6 +18,15 @@ body, html{
   z-index:0;
 }
 
+.underline{
+  transition: all .35s ease-in-out;
+  position: absolute;
+  border-bottom: 4px solid transparent;
+  border-color: white;
+  z-index: -1;
+  transform: translateX(-60px);
+}
+
 .header-image {
   width: 2.5em;
   height: 2.5em;
@@ -37,14 +46,6 @@ body, html{
   text-decoration: none; 
   color:white;
   font-size: 1em;
-}
-.underline{
-  transition: all .35s ease-in-out;
-  position: absolute;
-  border-bottom: 4px solid transparent;
-  border-color: white;
-  z-index: -1;
-  transform: translateX(-60px);
 }
 
 .header{
@@ -281,20 +282,7 @@ ul {
 .faqemail {
   font-size: 1em;
 }
-.links{
-  position: block;
-  height:4rem;
-  left:0;
-  bottom: 0;
-  width: 100%;
-  background-color: gray;
-  color: black;
-  text-align: center;
-  display:flex;
-  justify-content: center;
-  align-items:center;
-  gap:20px;
-}
+
 /* SPONSORS */
 .sponsorbox{
   background-color:white;
@@ -333,6 +321,44 @@ ul {
   width: 80%;
   border-radius: 10px;
 }
+
+/* LINKS */
+.link-sector{
+  display:flex;
+  width: 180px;
+  justify-content: center;
+  align-items:center;
+  gap: 0px;
+  list-style-type: none;
+}
+
+.link-sector > a {
+  text-decoration: none; 
+  color:black;
+  font-size: 1em;
+}
+
+.links{
+  position: block;
+  height:4rem;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: black;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  gap:50px;
+}
+
+.link-icon {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+
 @media screen and (max-width: 992px){
   :root {
     --nav-height: 6rem;
@@ -360,3 +386,5 @@ ul {
     font-size: 1.5em;
   }
 }
+
+*{ border: 1px solid red; }
