@@ -232,11 +232,11 @@ hr {
       padding:5vh 3vw;
     }
     .back{
-      font-size:1em;
+      font-size:0.94em;
       padding: 0.8em 1.5em;
       position:relative;
       top: 0.3em;
-      right: 0.3em;
+      left: 0.3em;
     }
     .header-image {
         display: none;
