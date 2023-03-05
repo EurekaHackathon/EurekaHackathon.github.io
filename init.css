@@ -358,7 +358,6 @@ ul {
   height: 2.5em;
 }
 
-
 @media screen and (max-width: 992px){
   :root {
     --nav-height: 6rem;
@@ -387,4 +386,3 @@ ul {
   }
 }
 
-*{ border: 1px solid red; }
