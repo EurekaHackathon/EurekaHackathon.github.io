@@ -325,7 +325,7 @@ ul {
 /* LINKS */
 .link-sector{
   display:flex;
-  width: 180px;
+  width: 100px;
   justify-content: center;
   align-items:center;
   gap: 0px;
@@ -348,14 +348,35 @@ ul {
   color: black;
   text-align: center;
   display:flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items:center;
-  gap:50px;
+  gap:0px;
 }
 
 .link-icon {
   width: 2.5em;
   height: 2.5em;
+}
+
+.social-icon {
+  width: 2000%;
+  height: 2000%;
+  transition: color 0.2s;
+  text-decoration:none;
+}
+
+.social-icon:hover{
+  color:aliceblue;
+}
+
+.justify-start {
+  margin-right: auto;
+  padding-left: 2%;
+}
+
+ion-icon {
+  font-size: 2em;
+  text-decoration:none;
 }
 
 @media screen and (max-width: 992px){
