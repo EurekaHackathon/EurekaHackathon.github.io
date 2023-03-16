@@ -27,6 +27,7 @@ body, html{
   transform: translateX(-60px);
 }
 
+
 .header-image {
   width: 2.5em;
   height: 2.5em;
@@ -287,9 +288,30 @@ ul {
 .sponsorbox{
   background-color:white;
   color:black;
+  
   padding:1em;
   padding-bottom: 2em;
   border-radius: 10px;
+}
+
+.sponsor-img{
+  
+  margin: 0px 10% 0px 10%;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.sponsor{
+  text-decoration:none;
+}
+
+.sponsors-inbox{
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  align-items:center;
+  gap: 0px;
+  list-style-type: none;
 }
 
 
@@ -377,6 +399,7 @@ ul {
 ion-icon {
   font-size: 2em;
   text-decoration:none;
+  pointer-events :none;
 }
 
 @media screen and (max-width: 992px){
