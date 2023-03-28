@@ -324,7 +324,7 @@ ul {
   justify-content: center;
   align-items:center;
   flex-wrap:wrap;
-  gap: 1.8em;
+  gap: 0.1em 1.8em;
   list-style-type: none;
 }
 
