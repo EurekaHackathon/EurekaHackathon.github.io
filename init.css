@@ -416,6 +416,11 @@ ion-icon {
   pointer-events :none;
 }
 
+.donation {
+  text-align:center;
+  padding:1vh 1.5vw 1vh 1.5vw;
+}
+
 @media screen and (max-width: 992px){
   :root {
     --nav-height: 6rem;
