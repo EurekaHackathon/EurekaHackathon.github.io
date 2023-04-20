@@ -155,12 +155,7 @@ section{
   font-size: 2em;
   color:white;
 }
-.about{
-  padding:15vh 15vw 15vh 15vw;
-  position:relative;
-  line-height:1.5em;
-  color:gray;
-}
+
 .svgboundarytop{
   position:absolute;
   left:0;
@@ -177,6 +172,12 @@ section{
   color:var(--alt-bg-color);
   z-index:-2;
   transform: rotate(180deg);
+}
+.about{
+  padding:15vh 15vw 15vh 15vw;
+  position:relative;
+  line-height:1.5em;
+  color:gray;
 }
 .aboutbox {
   font-size: 1em;
@@ -459,3 +460,4 @@ ion-icon {
     padding: 80px;
   }
 }
+
