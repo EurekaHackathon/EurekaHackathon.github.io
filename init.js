@@ -4,10 +4,10 @@ var r = document.querySelector(':root');
 const parallax = document.getElementById("main");
 let offset = window.pageYOffset;   
 parallax.style.backgroundPositionY = offset * 0.7 + "px";
-window.addEventListener("scroll", function () {
-  let offset = window.pageYOffset;
-  parallax.style.backgroundPositionY = offset * 0.7 + "px";
-});
+// window.addEventListener("scroll", function () {
+//   let offset = window.pageYOffset;
+//   parallax.style.backgroundPositionY = offset * 0.7 + "px";
+// });
 
 
 //change color of header when scrolled far enough
@@ -35,6 +35,8 @@ window.addEventListener("scroll", changeHeader);
 
 let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
+    let offset = window.pageYOffset;
+    parallax.style.backgroundPositionY = offset * 0.7 + "px";
     if (lastScrollY < window.scrollY) {
         header.classList.add("header-hidden");
     } else {
