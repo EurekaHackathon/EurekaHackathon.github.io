@@ -29,14 +29,16 @@ function changeHeader() {
 }
 window.addEventListener('load', changeHeader);
 window.addEventListener("resize", changeHeader);
-window.addEventListener("scroll", changeHeader);
 
 //disappear header when scroll down
 
 let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
+    changeHeader()
+    
     let offset = window.pageYOffset;
     parallax.style.backgroundPositionY = offset * 0.7 + "px";
+
     if (lastScrollY < window.scrollY) {
         header.classList.add("header-hidden");
     } else {
