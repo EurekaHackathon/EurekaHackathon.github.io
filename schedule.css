@@ -65,66 +65,7 @@ body, html{
 }
 
 @media screen and (min-width:700px) {
-	.schedule {
-		display: grid;
-		grid-gap: 1em;
-		grid-template-rows:
-			[tracks] auto
-			[time-0900] 1fr
-			[time-0915] 1fr
-			[time-0930] 1fr
-			[time-0945] 1fr
-			[time-1000] 1fr
-			[time-1015] 1fr
-			[time-1030] 1fr
-			[time-1045] 1fr
-            [time-1100] 1fr
-            [time-1115] 1fr
-            [time-1130] 1fr
-            [time-1145] 1fr
-            [time-1200] 1fr
-            [time-1215] 1fr
-            [time-1230] 1fr
-            [time-1245] 1fr
-            [time-1300] 1fr
-            [time-1315] 1fr
-            [time-1330] 1fr
-            [time-1345] 1fr
-            [time-1400] 1fr
-            [time-1415] 1fr
-            [time-1430] 1fr
-            [time-1445] 1fr
-            [time-1500] 1fr
-            [time-1515] 1fr
-            [time-1530] 1fr
-            [time-1545] 1fr
-            [time-1600] 1fr
-            [time-1615] 1fr
-            [time-1630] 1fr
-            [time-1645] 1fr
-            [time-1700] 1fr
-            [time-1715] 1fr
-            [time-1730] 1fr
-            [time-1745] 1fr
-            [time-1800] 1fr
-            [time-1815] 1fr
-            [time-1830] 1fr
-            [time-1845] 1fr
-            [time-1900] 1fr
-            [time-1915] 1fr
-            [time-1930] 1fr
-            [time-1945] 1fr
-            [time-2000] 1fr
-            [time-2015] 1fr
-            [time-2030] 1fr
-            [time-2045] 1fr
-            [time-2100] 1fr;
 
-            grid-template-columns:
-            [times] 4em
-			[track-1-start] 1fr
-            [track-1-end track-2-start] 1fr
-            [track-2-end];
     }
 }
 
@@ -138,26 +79,7 @@ body, html{
     box-shadow:
     rgba(0,0,0,.3) 1px 1px 0,
     rgba(77,77,77,.6) 4px 4px 0;
-}
-
-@supports ( display:grid ) {
-    @media screen and (min-width:700px) {
-        .track-slot {
-            display: block;
-            position: relative;
-            top: 0;
-            z-index: 1000;
-            
-            line-height:1em;
-            background-color: #d18d35; 
-            margin-top: .5em;
-            padding: 1em 0.5em;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 1em;
-            border-radius: 15px;
-        }
-    }
+    
 }
 
 .session {
@@ -199,16 +121,27 @@ body, html{
 .time-slot {
 	font-weight: bold;
 	font-size:.75em;
+    padding-bottom: 0.8em;
 }
 
 .track-1 {
-	background-color: #1259B2;
+	background-color: #D18D35;
 	color: #fff;
 }
 
 .track-2 {
-	background-color: #687f00;
+	background-color: #176B99;
 	color: #fff;
+}
+
+.track-3 {
+    background-color: #5C9936; 
+    color: #fff;
+}
+
+.track-4 {
+    background-color: #CC2AD1;
+    color: #fff;
 }
 
 .track-all {
