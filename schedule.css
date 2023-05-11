@@ -64,11 +64,6 @@ body, html{
     background-color: #ca9b5d; 
 }
 
-@media screen and (min-width:700px) {
-
-    }
-}
-
 .time-slot {
     grid-column: times;
     text-align:center;
