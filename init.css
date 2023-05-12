@@ -480,5 +480,8 @@ ion-icon {
   .header-middle{
     padding-inline-start: 0;
   }
+  .featurebox {
+    grid-template-columns: repeat(1, minmax(11rem, 1fr));
+  }
 }
 
